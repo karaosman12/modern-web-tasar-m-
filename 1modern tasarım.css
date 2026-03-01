@@ -1,0 +1,158 @@
+*{
+    gap: 0;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f5e0bc;
+    padding: 50px;
+}
+
+h1,
+a,
+h3,
+h2,
+p {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header{
+   
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    background-color: aliceblue;
+    height: 80px;
+    padding: 10px;
+    min-width: 810px;
+}
+
+.Title{
+    justify-self: start;
+}
+.nav{
+    justify-self: center;
+}
+.login{
+    justify-self: end;
+}
+header nav ul{
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    justify-content: center;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    transition: 0,5 ease;
+}
+
+header a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+
+}
+
+main {
+    background-color: aliceblue;
+    padding: 15px;
+    min-width: 800px;
+}
+
+.main-img {
+    position: relative;
+    background: aliceblue;
+    padding: 120px 0;
+    text-align: center;
+    overflow: hidden;
+    min-width: 800px;
+}
+
+.decor  {
+    position: absolute;
+    left: 0px;
+    top: 100px;
+    width: 400px;
+    opacity: 0.2;
+    filter: blur(2px);
+    z-index: 0;
+}
+
+.main-img h1,
+.main-img p {
+    position: relative;
+    z-index: 1;
+    margin: 10px 200px;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+.card{
+    height: 300px;
+    width: 300px;
+    background: #f5e0bc;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.card h3{
+    text-align: center;
+    margin-top: 20px;
+}
+.card p {
+    margin: 10px;
+}
+
+.cards1{
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 800px;
+    margin: 50px 200px 0 200px;
+    gap: 30px;
+    justify-content: center;
+}
+
+.card1{
+    height: 300px;
+    width: 240px;
+    background: #f5e0bc;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition:transform 0.5s ease;
+
+}
+
+.card1:hover{
+    transform: translateY(-10px);
+}
+
+.card1 img{
+    height: 200px;
+    width: 200px;
+    align-self: center;
+    
+    
+}
+
+footer{
+    background: aliceblue;
+    min-width: 800px;
+    margin: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
